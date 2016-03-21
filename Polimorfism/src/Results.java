@@ -20,4 +20,6 @@ public class Results {
 //possui dois ou mais métodos com a mesma assinatura, com a diferença sendo os argumentos
 //passados para o método.
 
+//No wiki, encontra-se a explicação das vantagens de utilizar o polimorfismo
+// na manutenção do código.
 
