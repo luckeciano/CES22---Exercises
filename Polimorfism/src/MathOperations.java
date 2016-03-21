@@ -5,9 +5,10 @@
 //Observe a implementação da classe abstrata MathOperations, que 
 //representa qualquer operação matemática
 public abstract class MathOperations {
-	public abstract double calcular (double x, double y);
+	public abstract double calculate (double x, double y);
 
 }
-// Vamos implementar soma, subtração e multiplicação
+// Vamos implementar soma e subtração em outros arquivos e a classe Results,
+// onde estará a main do projeto. Acompanhe o resto da explicação por lá!
 
 

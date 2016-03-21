@@ -1,10 +1,10 @@
-//Implementação da classe soma
-public class Sum extends MathOperations {
+//Implementação da classe subtract
+public class Subtract extends MathOperations {
 
 	@Override
 	public double calculate(double x, double y) {
 		// TODO Auto-generated method stub
-		return x + y;
+		return x - y;
 	}
 
 }
