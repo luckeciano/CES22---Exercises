@@ -1,4 +1,4 @@
-
+//Class Shape
 public class Shape {
 	private String name;
 	Shape (String aName) {name = aName;}

@@ -1,4 +1,4 @@
-
+//Class Square
 public class Square extends Shape {
 	private int side;
 	Square (String aName){
