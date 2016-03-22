@@ -1,4 +1,4 @@
-
+//Class Time
 public class Time {
 	//encapsulamento dos atributos: tornam-se private
 	private int hour;
