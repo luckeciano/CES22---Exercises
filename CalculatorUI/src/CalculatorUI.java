@@ -1,5 +1,12 @@
 //Interface Gráfica na Calculadora
 
+//Neste código, implementou-se a UI da calculadora
+//Embora o código desta classe seja extensa, este foi desenvolvido
+//por meio do uso do plugin do Windows Builder
+//Assim, por meio da aba "design" (encontrada logo abaixo desta tela de código)
+//criou-se botões, painéis e campos de texto.
+//Esta UI foi integrada a engine da calculadora, desenvolvida em projetos anteriores
+
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
