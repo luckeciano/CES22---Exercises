@@ -15,6 +15,6 @@ public class Consumidor extends Thread {
 		for (int i = 0; i < totalConsumir; i++){
 			pilha.get(idConsumidor);
 		}
-		System.out.println('Consumidor #' + idConsumidor + " concluído!");
+		System.out.println("Consumidor #" + idConsumidor + " concluído!");
 	}
 }
