@@ -1,3 +1,5 @@
+//Interface Gráfica na Calculadora
+
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
@@ -12,6 +14,7 @@ import javax.swing.JTextField;
 
 public class CalculatorUI extends JFrame {
 
+	//Atributos gráficos e engine da calculadora(painel, campo de texto)
 	private JPanel contentPane;
 	private JTextField textField;
 	CalculatorEngine engine = new CalculatorEngine();
@@ -40,6 +43,7 @@ public class CalculatorUI extends JFrame {
 	 */
 	public CalculatorUI() {
 		
+		//Configurações do painel
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -47,6 +51,7 @@ public class CalculatorUI extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		//Criação dos Botões e da ação de cada um
 		JButton btnClear = new JButton("Clear");
 		btnClear.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -204,6 +209,7 @@ public class CalculatorUI extends JFrame {
 		button_14.setBounds(338, 53, 89, 23);
 		contentPane.add(button_14);
 		
+		//Criação do campo de texto - display
 		textField = new JTextField();
 		textField.setBounds(139, 11, 164, 65);
 		contentPane.add(textField);
