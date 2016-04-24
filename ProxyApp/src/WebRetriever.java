@@ -2,11 +2,13 @@ import java.io.*;
 import java.net.*;
 
 public class WebRetriever {
+	
+	//Atributos da classe WebRetriever
 	Socket soc;
 	OutputStream os;
 	InputStream is;
 	String webServer;
-	//Default constructor
+	//Construtor Padrão
 	WebRetriever (String server, int port) throws IOException, UnknownHostException{
 		webServer = server;
 		soc = new Socket(server, port);
@@ -14,10 +16,10 @@ public class WebRetriever {
 		is = soc.getInputStream();		
 	}
 	
-	//Request from user
+	//Requisição do usuário
 	void request (String path){
 		try {
-			System.out.println("Request: " + path);
+			System.out.println("GET Request: " + path);
 			String message = "GET " + path + "\n\n";
 			os.write(message.getBytes());
 			os.flush();
@@ -25,7 +27,7 @@ public class WebRetriever {
 			System.err.println("Error in HTTP Request");
 		}
 	}
-	//Get response from server
+	//Resposta do servidor web
 	void getResponse (){
 		int c;
 		System.out.println("Retornando resposta do servidor...");
@@ -37,7 +39,7 @@ public class WebRetriever {
 			System.err.println("IOException in reading from Web server");
 		}
 	}
-	//Closing resources
+	//Fechando recursos
 	public void close(){
 		try {
 			is.close();
@@ -51,6 +53,7 @@ public class WebRetriever {
 
 	//main
 	public static void main (String args[]){
+		//Leitura do URL enviado pelo cliente
 		System.out.println("Por favor, especifique a URL que você deseja acessar:");
 		String content = null;
 		String message = null;
@@ -67,8 +70,10 @@ public class WebRetriever {
 				e.printStackTrace();
 			}
 			String[] url = content.split("/",2);
+			//Estabelecimento de conexão com o servidor
 			try {
 				int port = 80;
+				//Proxy bloqueia entrada no facebook
 				if (url[0].equals("www.facebook.com")){
 					System.out.println("O acesso a este site está proibido");
 				}
