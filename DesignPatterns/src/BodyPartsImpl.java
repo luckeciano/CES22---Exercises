@@ -1,11 +1,11 @@
 
 public interface BodyPartsImpl {
-	public void createArm();
+	public void createArm(Arm arm);
 	
-	public void createHead();
+	public void createHead(Head head);
 	
-	public void createLeg ();
+	public void createLeg (Leg leg);
 	
-	public void createTrunk ();
+	public void createTrunk (Trunk trunk);
 
 }
